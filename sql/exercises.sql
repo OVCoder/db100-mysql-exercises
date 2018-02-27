@@ -155,6 +155,12 @@ SELECT * FROM payment
 # release_year          Exists in film table.
 # total_rental_cost     rental_duration * rental_rate
 
+SELECT 
+    title,
+    description,
+    release_year,
+	rental_duration * rental_rate AS total_rental_cost
+FROM film WHERE (LENGTH(description) BETWEEN '100' AND '120');
 
 # ---------------------------------------------------------#
 
@@ -163,14 +169,30 @@ SELECT * FROM payment
 
 # 6a. Select the following columns from the film table for rows where the description begins with "A Thoughtful".
 # Title, Description, Release Year
+SELECT
+    title,
+    description,
+    release_year
+FROM film WHERE description LIKE ('A Thoughtful%');
 
 
 # 6b. Select the following columns from the film table for rows where the description ends with the word "Boat".
 # Title, Description, Rental Duration
+SELECT
+    title,
+    description,
+    rental_duration
+FROM film WHERE description LIKE ('%Boat');
 
 
 # 6c. Select the following columns from the film table where the description contains the word "Database" and the length of the film is greater than 3 hours.
 # Title, Length, Description, Rental Rate
+SELECT
+    title,
+    length,
+    description,
+    rental_rate
+FROM film WHERE description LIKE ('%Database%') AND length >180;
 
 
 # ---------------------------------------------------------#

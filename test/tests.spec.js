@@ -199,17 +199,17 @@ describe('SQL Exercises -', function () {
     });
   });
 
-  // describe('LIKE operator -', () => {
-  //   it('6a - Select films where description begins with "A Thoughtful"', () => {
-  //     gradeExercise(results[19], 45, 'description', 'release_year', 'title');
-  //   });
-  //   it('6b. Select films where description ends with "Boat"', () => {
-  //     gradeExercise(results[20], 84, 'description', 'rental_duration', 'title');
-  //   });
-  //   it('6c. Select films where description contains the word "Database" and longer than 3 hours', () => {
-  //     gradeExercise(results[21], 2, 'description', 'length', 'rental_rate', 'title');
-  //   });
-  // });
+  describe('LIKE operator -', () => {
+    it('6a - Select films where description begins with "A Thoughtful"', () => {
+      gradeExercise(results[19], 45, 'description', 'release_year', 'title');
+    });
+    it('6b. Select films where description ends with "Boat"', () => {
+      gradeExercise(results[20], 84, 'description', 'rental_duration', 'title');
+    });
+    it('6c. Select films where description contains the word "Database" and longer than 3 hours', () => {
+      gradeExercise(results[21], 2, 'description', 'length', 'rental_rate', 'title');
+    });
+  });
 
   // describe('LIMIT operator -', () => {
   //   it('7a - Select the first 20 payments', () => {
