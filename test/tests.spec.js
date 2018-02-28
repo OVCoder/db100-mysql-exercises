@@ -211,52 +211,52 @@ describe('SQL Exercises -', function () {
     });
   });
 
-  // describe('LIMIT operator -', () => {
-  //   it('7a - Select the first 20 payments', () => {
-  //     gradeExercise(results[22], 20, allPaymentColumns);
-  //   });
-  //   it('7b. Select the 2nd page of payments over $5 where the page size is 1000', () => {
-  //     gradeExercise(results[23], 1000, 'payment_id', 'payment_date', 'amount');
-  //   });
-  //   it('7c. Select the 2nd page of customers where the page size is 100', () => {
-  //     gradeExercise(results[24], 100, allCustomerColumns);
-  //   });
-  // });
+  describe('LIMIT operator -', () => {
+    it('7a - Select the first 20 payments', () => {
+      gradeExercise(results[22], 20, allPaymentColumns);
+    });
+    it('7b. Select the 2nd page of payments over $5 where the page size is 1000', () => {
+      gradeExercise(results[23], 1000, 'payment_id', 'payment_date', 'amount');
+    });
+    it('7c. Select the 2nd page of customers where the page size is 100', () => {
+      gradeExercise(results[24], 100, allCustomerColumns);
+    });
+  });
 
-  // describe('ORDER BY statement -', () => {
-  //   it('8a - Select films ordered by length in descending order', () => {
-  //     gradeExercise(results[25], 1000, allFilmColumns);
-  //   });
-  //   it('8b. Select distinct ratings ordered by rating in descending order', () => {
-  //     gradeExercise(results[26], 5, 'rating');
-  //   });
-  //   it('8c. Select first 20 payments ordered by payment in descending order', () => {
-  //     gradeExercise(results[27], 20, 'payment_date', 'amount');
-  //   });
-  //   it('8d. Select the first 10 films that have behind the scenes footage, are under 2 hours in length, and a rental duration between 5 and 7, ordered by length in descending order.', () => {
-  //     gradeExercise(results[28], 10, 'title', 'description', 'special_features', 'length', 'rental_duration');
-  //   });
-  // });
+  describe('ORDER BY statement -', () => {
+    it('8a - Select films ordered by length in descending order', () => {
+      gradeExercise(results[25], 1000, allFilmColumns);
+    });
+    it('8b. Select distinct ratings ordered by rating in descending order', () => {
+      gradeExercise(results[26], 5, 'rating');
+    });
+    it('8c. Select first 20 payments ordered by payment in descending order', () => {
+      gradeExercise(results[27], 20, 'payment_date', 'amount');
+    });
+    it('8d. Select the first 10 films that have behind the scenes footage, are under 2 hours in length, and a rental duration between 5 and 7, ordered by length in descending order.', () => {
+      gradeExercise(results[28], 10, 'title', 'description', 'special_features', 'length', 'rental_duration');
+    });
+  });
 
-  // describe('JOINS -', () => {
-  //   it('9a - Select customer and actor name intersections using a LEFT join', () => {
-  //     gradeExercise(results[29], 620, 'actor_first_name', 'actor_last_name', 'customer_first_name', 'customer_last_name');
-  //   });
-  //   it('9b. Select customer and actor name intersections using a RIGHT join', () => {
-  //     gradeExercise(results[30], 200, 'actor_first_name', 'actor_last_name', 'customer_first_name', 'customer_last_name');
-  //   });
-  //   it('9c. Select customer and actor name intersections using an INNER join', () => {
-  //     gradeExercise(results[31], 43,  'actor_first_name', 'actor_last_name', 'customer_first_name', 'customer_last_name');
-  //   });
-  //   it('9d. Select city and country name, using a LEFT join on country table', () => {
-  //     gradeExercise(results[32], 600, 'city', 'country');
-  //   });
-  //   it('9e. Select films with language info, using a LEFT join on language table', () => {
-  //     gradeExercise(results[33], 1000, 'title', 'description', 'release_year', 'language');
-  //   });
-  //   it('9f. Select staff records complete with address information using 2 LEFT joins', () => {
-  //     gradeExercise(results[34], 2, 'address', 'address2', 'city', 'district', 'first_name', 'last_name', 'postal_code');
-  //   });
-  // });
+  describe('JOINS -', () => {
+    it('9a - Select customer and actor name intersections using a LEFT join', () => {
+      gradeExercise(results[29], 620, 'actor_first_name', 'actor_last_name', 'customer_first_name', 'customer_last_name');
+    });
+    it('9b. Select customer and actor name intersections using a RIGHT join', () => {
+      gradeExercise(results[30], 200, 'actor_first_name', 'actor_last_name', 'customer_first_name', 'customer_last_name');
+    });
+    it('9c. Select customer and actor name intersections using an INNER join', () => {
+      gradeExercise(results[31], 43,  'actor_first_name', 'actor_last_name', 'customer_first_name', 'customer_last_name');
+    });
+    it('9d. Select city and country name, using a LEFT join on country table', () => {
+      gradeExercise(results[32], 600, 'city', 'country');
+    });
+    it('9e. Select films with language info, using a LEFT join on language table', () => {
+      gradeExercise(results[33], 1000, 'title', 'description', 'release_year', 'language');
+    });
+    it('9f. Select staff records complete with address information using 2 LEFT joins', () => {
+      gradeExercise(results[34], 2, 'address', 'address2', 'city', 'district', 'first_name', 'last_name', 'postal_code');
+    });
+  });
 
 });
